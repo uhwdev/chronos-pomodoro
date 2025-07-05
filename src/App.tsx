@@ -26,10 +26,11 @@ export function App() {
         <form action="form">
           <div className="formRow">
             <DefaultInput
-              labelText="qualquercoisa"
+              labelText="task"
               id="meuInput"
               type="text"
-              disabled
+              placeholder="Digite Algo"
+              defaultValue="Valor Prenchido"
             />
           </div>
 
