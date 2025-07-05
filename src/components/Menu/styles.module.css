@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.6rem;
+  gap: 1.4rem;
 }
 
 .menuLink {
@@ -14,7 +14,7 @@
   color: var(--text-over-primary);
   transition: all 0.1s ease-in-out;
   padding: 1rem;
-  border-radius: 0.8rem;
+  border-radius: 1.2rem;
 }
 
 .menuLink:hover {
