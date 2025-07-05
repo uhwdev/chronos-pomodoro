@@ -25,7 +25,12 @@ export function App() {
       <Container>
         <form action="form">
           <div className="formRow">
-            <DefaultInput id="meuInput" type="text" />
+            <DefaultInput
+              labelText="qualquercoisa"
+              id="meuInput"
+              type="text"
+              disabled
+            />
           </div>
 
           <div className="formRow">
