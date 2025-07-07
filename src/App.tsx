@@ -6,14 +6,24 @@ import { DefaultInput } from "./components/DefaultInput";
 import { Cycles } from "./components/Cycles";
 import { DefaultButton } from "./components/DefaultButton";
 import { Footer } from "./components/Footer";
+import { Heading } from "./components/Heading";
 
 import "./styles/theme.css";
 import "./styles/global.css";
 import { PlayCircleIcon } from "lucide-react";
 
 export function App() {
+  let numero = 0;
+
+  function handleClick() {
+    numero += 1;
+    console.log(numero);
+  }
+
   return (
     <>
+      <Heading> Número: 0</Heading>
+      <button onClick={handleClick}>Aumenta</button>
       <Container>
         <Logo />
       </Container>
@@ -30,7 +40,7 @@ export function App() {
         <form className="form" action="">
           <div className="formRow">
             <DefaultInput
-              labelText="task"
+              labelText={numero.toString}
               id="meuInput"
               type="text"
               placeholder="Digite Algo"
