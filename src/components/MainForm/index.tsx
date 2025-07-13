@@ -2,8 +2,9 @@ import { PlayCircleIcon } from "lucide-react";
 import { DefaultInput } from "../DefaultInput";
 import { Cycles } from "../Cycles";
 import { DefaultButton } from "../DefaultButton";
+import type { HomeProps } from "../../pages/Home";
 
-export function MainForm() {
+export function MainForm({ state }: HomeProps) {
   return (
     <form className="form" action="">
       <div className="formRow">
@@ -16,7 +17,7 @@ export function MainForm() {
       </div>
 
       <div className="formRow">
-        <p>Lorem ipsum dolor sit kat</p>
+        <p>Lorem ipsum dolor sit kat {state.config.workTime}</p>
       </div>
 
       <div className="formRow">
