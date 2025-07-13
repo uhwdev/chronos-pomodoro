@@ -2,7 +2,7 @@ import { Container } from "../../components/Container";
 import { Heading } from "../../components/Heading";
 import { MainTemplate } from "../../templates/MainTemplate";
 
-export function AboutPomodoro() {
+export function NotFound() {
   return (
     <MainTemplate>
       <Container>
